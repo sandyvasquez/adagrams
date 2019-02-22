@@ -59,6 +59,8 @@ describe 'Adagrams' do
       drawn_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
       dl_copy = drawn_letters.dup
 
+      # Hint: if your implementation of uses_available_letters?
+      # needs to change the hand, you should make a copy first
       uses_available_letters? 'ABCD', drawn_letters
 
       expect(drawn_letters).must_equal dl_copy
