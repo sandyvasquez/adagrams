@@ -55,6 +55,14 @@ describe 'Adagrams' do
       expect(is_valid).must_equal false
     end
 
+    it 'does not change the letters in hand' do
+      drawn_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+      dl_copy = drawn_letters.dup
+
+      uses_available_letters? 'ABCD', drawn_letters
+
+      expect(drawn_letters).must_equal dl_copy
+    end
   end
 
   describe 'score_word method' do
