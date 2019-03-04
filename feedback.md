@@ -5,7 +5,6 @@ Feature | Feedback
 --- | ---
 **General** |
 Answered comprehension questions |
-Both teammates contributed to the codebase |
 Small commits with meaningful commit messages |
 **Code Requirements** |
 `draw_letters` method |
