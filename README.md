@@ -29,7 +29,7 @@ The program should also pass the provided unit tests.
 
 ## Getting Started
 
-* From the project root, you are able to execute all of your specs by running `rake` in Terminal
+* From the project root, you are able to execute all of your tests by running `rake` in Terminal
 
 <details>
 <summary>For the curious about `rake`, click here</summary>
@@ -51,7 +51,7 @@ What do these errors mean? These errors should help guide you with the next step
 
 The tests for this project are written in [minitest](https://github.com/seattlerb/minitest), a testing framework by Seattle Ruby Brigade.
 
-Do not move onto a new wave of requirements until the minimum requirements of the previous wave are complete and your specs are green across the board.
+Do not move onto a new wave of requirements until the minimum requirements of the previous wave are complete and your tests are green across the board.
 
 Here is what it looks like when all 16 tests are passing:
 ![all 16 tests are passing message](assets/passing-tests-screenshot.png)
@@ -189,7 +189,7 @@ Add a method called `is_in_english_dict?` in `adagrams.rb`. This method should h
   - `false`, if `input` is not in the provided English dictionary
 - Uses the English dictionary found in `assets/dictionary-english.csv`
 
-There are no unit tests provided for this wave, but there is driver code found in `wave-5-game.rb`. Feel free to alter `specs/adagrams_sepc.rb` and add some!
+There are no unit tests provided for this wave, but there is driver code found in `wave-5-game.rb`. Feel free to alter `test/adagrams_test.rb` and add some!
 
 Nota Bene: The original data for all of the alpha words of the English dictionary was found freely available at [`dwyl/english-word`'s repo](https://github.com/dwyl/english-words), and was modified to only include words under 10 characters.
 
