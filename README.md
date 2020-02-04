@@ -1,7 +1,7 @@
 # Adagrams
 
 ## At a Glance
-- Pair, [stage 2](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/rule-of-three.md#stage-2) project
+- Pair, [stage 2](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/classroom/rule-of-three.md#stage-2) project
 - Due by End of Day, **DATE HERE**
 
 ## Introduction
