@@ -85,6 +85,20 @@ Come up with a "plan of action" for your implementation with your pair.
 
 If, after you and your pair have taken some time to think through the problem and would like direction for how to dissect the problem, or if you need clarity on the terms/vocabulary we used in this project, you can check out [a small hint we've provided](hints.md).
 
+### Install the Dependencies
+
+This project has _external dependencies._ This means that someone else built a very good code tool, and we want to use it... by downloading and installing it. If our external dependency is a Ruby gem, then we need to install it.
+
+We need to install three dependencies: `minitest`, `minitest-reporters`, and `minitest-skip` for this project. We do so with these three commands:
+
+```bash
+$ gem install minitest
+$ gem install minitest-reporters
+$ gem install minitest-skip
+```
+
+It's possible that you've already done this in a previous lesson. Re-installing it does not have any negative side-effects.
+
 ## Implementation Requirements
 
 ### Wave 1
