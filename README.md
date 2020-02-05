@@ -29,33 +29,6 @@ The program should also pass the provided unit tests.
 
 ## Getting Started
 
-* From the project root, you are able to execute all of your tests by running `rake` in Terminal
-
-<details>
-<summary>For the curious about `rake`, click here</summary>
-
-`rake` [(official site)](https://github.com/ruby/rake) is a program that runs tasks that we define. In this case, we have a pre-defined task that executes the tests. By running `rake`, we are saying something like, "Please run the tasks, which includes the task that executes the tests."
-</details>
-
-### Tests
-We have provided unit tests for you to run. A complete project will pass all provided tests.
-
-To run the tests, in the command line, navigate to the project root and then run the command `$ rake` (without the `$`. Remember, `$` indicates that it is a command line command.)
-
-When you first open the project and run the tests with `rake`, you should have 0 passing tests and 16 failures. You should see something similar to the following screenshots:
-
-![failing tests error stack trace that reads "no method defined"](assets/failing-tests-error.png)
-![failing tests error reading "16 failures"](assets/failing-tests-screenshot.png)
-
-What do these errors mean? These errors should help guide you with the next step to completing the project.
-
-The tests for this project are written in [minitest](https://github.com/seattlerb/minitest), a testing framework by Seattle Ruby Brigade.
-
-Do not move onto a new wave of requirements until the minimum requirements of the previous wave are complete and your tests are green across the board.
-
-Here is what it looks like when all 16 tests are passing:
-![all 16 tests are passing message](assets/passing-tests-screenshot.png)
-
 ### Pair Programming
 Utilize good pair programming practices. Refer to articles from the [Agile Alliance](http://guide.agilealliance.org/guide/pairing.html), the [Agile Institute](http://powersoftwo.agileinstitute.com/2015/02/benefits-of-pair-programming-revisited.html), and [our own suggestions for pairing](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/programming-techniques-pairs-or-solo.md#pair-programming) if you need a refresher for some best practices. Switch _driver_ and _navigator_ roles often. When there is uncertainty or confusion, step away from the keyboard and discuss, plan, and document on paper or whiteboard before continuing.
 
@@ -84,6 +57,57 @@ Take time to read through the Wave 1 implementation requirements and the tests f
 Come up with a "plan of action" for your implementation with your pair.
 
 If, after you and your pair have taken some time to think through the problem and would like direction for how to dissect the problem, or if you need clarity on the terms/vocabulary we used in this project, you can check out [a small hint we've provided](hints.md).
+
+### Install the Dependencies
+
+This project has _external dependencies._ This means that someone else built a very good code tool, and we want to use it... by downloading and installing it. If our external dependency is a Ruby gem, then we need to install it.
+
+We need to install three dependencies: `minitest`, `minitest-reporters`, and `minitest-skip` for this project. We do so with these three commands:
+
+```bash
+$ gem install minitest
+$ gem install minitest-reporters
+$ gem install minitest-skip
+```
+
+It's possible that you've already done this in a previous lesson. Re-installing it does not have any negative side-effects.
+
+<details>
+
+  <summary>minitest seems like a pretty cool Gem.</summary>
+
+  The tests for this project are written in [minitest](https://github.com/seattlerb/minitest), a testing framework by Seattle Ruby Brigade. Hooray Seattle and Ruby!
+
+</details>
+
+## Testing Requirements
+
+* From the project root, you should be able to execute all of your tests by running `rake` in Terminal
+
+<details>
+<summary>For those curious about `rake`, click here</summary>
+
+`rake` [(official site)](https://github.com/ruby/rake) is a program that runs tasks that we define. In this case, we have a pre-defined task that executes the tests. By running `rake`, we are saying something like, "Please run the tasks, which includes the task that executes the tests."
+</details>
+
+### Tests
+We have provided unit tests for you to run. A complete project will pass all provided tests.
+
+To run the tests, in the command line, navigate to the project root and then run the command `$ rake` (without the `$`. Remember, `$` indicates that it is a command line command.)
+
+When you first open the project and run the tests with `rake`, you should have 0 passing tests and 17 failures. You should see something similar to the following screenshots:
+
+![failing tests error stack trace that reads "no method defined"](assets/failing-tests-error.png)
+![failing tests error reading "16 failures"](assets/failing-tests-screenshot.png)
+
+What do these errors mean? These errors should help guide you with the next step to completing the project.
+
+Do not move onto a new wave of requirements until the minimum requirements of the previous wave are complete and your tests are green across the board.
+
+Here is what it looks like when all 17 tests are passing:
+![all 16 tests are passing message](assets/passing-tests-screenshot.png)
+
+Note: The screenshots say 16 tests instead of the correct 17 tests.
 
 ## Implementation Requirements
 
