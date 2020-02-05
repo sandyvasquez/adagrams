@@ -95,7 +95,7 @@ We have provided unit tests for you to run. A complete project will pass all pro
 
 To run the tests, in the command line, navigate to the project root and then run the command `$ rake` (without the `$`. Remember, `$` indicates that it is a command line command.)
 
-When you first open the project and run the tests with `rake`, you should have 0 passing tests and 16 failures. You should see something similar to the following screenshots:
+When you first open the project and run the tests with `rake`, you should have 0 passing tests and 17 failures. You should see something similar to the following screenshots:
 
 ![failing tests error stack trace that reads "no method defined"](assets/failing-tests-error.png)
 ![failing tests error reading "16 failures"](assets/failing-tests-screenshot.png)
@@ -104,8 +104,10 @@ What do these errors mean? These errors should help guide you with the next step
 
 Do not move onto a new wave of requirements until the minimum requirements of the previous wave are complete and your tests are green across the board.
 
-Here is what it looks like when all 16 tests are passing:
+Here is what it looks like when all 17 tests are passing:
 ![all 16 tests are passing message](assets/passing-tests-screenshot.png)
+
+Note: The screenshots say 16 tests instead of the correct 17 tests.
 
 ## Implementation Requirements
 
