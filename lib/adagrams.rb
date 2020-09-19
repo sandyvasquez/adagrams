@@ -3,9 +3,9 @@ def draw_letters
 	letters_array = [ "A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "B", "C", "C", "D", "D", "D", "D", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "F", "F", "G", "G", "G", "H", "H", "I", "I", "I", "I", "I", "I", "I", "I", "I", "J", "K", "L", "L", "L", "L", "M", "M", "N", "N", "N", "N", "N", "N", "O", "O", "O", "O", "O", "O", "O", "O", "P", "P", "Q", "R", "R", "R", "R", "R", "R", "S", "S", "S", "S", "T", "T", "T", "T", "T", "T", "U", "U", "U", "U", "V", "V", "W", "W", "X", "Y", "Y", "Z" ]
 
 	letters = letters_array.shuffle.pop(10)
+	
 	return letters
 end
-
 
 # wave 2
 puts "Enter in a word: "
@@ -27,11 +27,10 @@ def uses_available_letters?(input, letters_in_hand)
 		end
 
 		my_letters_in_hand.delete_at(letter_index)
-	end
+  end
 
 	return true
 end
-
 
 # wave 3
 def score_word(word)
@@ -71,7 +70,7 @@ def highest_score_from(words)
 	highest_word = nil
 
 	words.each do |word|
-		score = score_word(word)
+	score = score_word(word)
 
 		if highest_score < score
 			highest_score = score
@@ -92,5 +91,4 @@ def highest_score_from(words)
 			:word => highest_word,
 			:score => highest_score
 	}
-
 end
